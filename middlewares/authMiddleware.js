@@ -22,7 +22,6 @@ function checkToken(req, res, next) {
   // let headers = JSON.parse(authorization)
   if (authorization && authorization.split(" ")[0] === 'Bearer') {
     token = authorization.split(" ")[1];
-    console.log('token: ', token);
     let decoded = jwt.verify(token, config.get('SECRET_KEY'));
     if (decoded) {
       return res.status(201).send({ message: true });
