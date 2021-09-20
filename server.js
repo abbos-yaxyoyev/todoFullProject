@@ -3,7 +3,6 @@
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
-const dotenv = require('dotenv').config(); //? require(-r)
 const app = express();
 
 require('express-async-errors');
