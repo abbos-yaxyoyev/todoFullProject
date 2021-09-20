@@ -1,0 +1,4 @@
+{
+    "SECRET_KEY": "secretPrivate_key",
+    "db": "privite_db_key"
+}

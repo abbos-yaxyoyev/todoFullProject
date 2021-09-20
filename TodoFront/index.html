@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="main-container">
+        <aside class="fixced--class"> 
+            <div class="img-icon"> 
+                <img class="img-logo" src="./img/To-do.jpg" alt="user photos">
+            </div>
+
+            <div class="btn"> <!-- https://css-trics.com/books/volume-i/how-to-make-a-tria-->
+                <h3 class="h3 h3Btn" id="all-todo" >All Todo List</h3>
+                <h3 class="h3" id="todo-doing"> Todo List doing</h3>
+                <h3 class="h3" id="todo-done">Todo List done</h3>
+            </div>
+
+            <div class="logout">
+                <button type="submit" class="btnLogout">Logout</button>
+            </div>
+        </aside>
+        <div>
+            <form class="first-form">
+                <input class="w-100" id="input" type="text" placeholder="todoList" required="required"><!--
+            --><button type="submit" class="btnAddTodo"><i class="fas fa-2x fa-plus"></i></button> <!--id="putTodo"-->
+            </form>
+        </div>
+        <div class="container-output">
+            <div class="ulDiv">
+                <ul id="ul" class="all-todos"></ul>
+            </div>
+            <div class="ulDiv">
+                <ul class="todo-doing"></ul>
+            </div>
+            <div class="ulDiv">
+                <ul class="todo-done"></ul>
+            </div>
+         </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

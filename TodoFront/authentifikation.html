@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/styleAuth.css">
+	<title>Autentifications</title>
+</head>
+<body>
+	<section class="auth"><a href="./login.html">Sign in </a></section>
+	<div class="container">
+		<form>
+			<label for="name">Name</label>
+			<input class="malumot-kiritish" id="name" type="text" name="name" placeholder="Name" autocomplete="off" required>
+
+			<label for="lastname">Last Name</label>
+			<input class="malumot-kiritish" id="lastname" type="text" name="lastname" placeholder="Last Name" autocomplete="off" required>
+
+			<label for="email">Email</label>
+			<input class="malumot-kiritish" id="email" type="email" name="email-input" 
+			placeholder="Email" required>
+
+			<label for="password">Password</label>
+			<input class="malumot-kiritish" id="password" type="password" name="password" name="password" 
+			placeholder="Password" required>
+
+			<p class="output-error"></p>
+
+			<button class="submit"  type="button" value="Submit" name="submit">Submit</button>
+		</form>
+	</div>
+
+	<script src="./js/auth.js"></script>
+
+</body>
+</html 

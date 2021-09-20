@@ -1,0 +1,255 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  color: #000;
+  background-image: url("../img/coffee_todo.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Bree Serif", Railvey sans-serif;
+  margin: 0;
+}
+
+.cf::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fixced--class {
+  width: 25%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+    to bottom right,
+    rgb(132, 193, 255),
+    rgba(85, 111, 136)
+  );
+}
+
+.logout {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+}
+
+.btnLogout {
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.img-logo {
+  border-radius: 50%;
+}
+
+.img-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+h3 {
+  width: 65%;
+  text-align: center;
+  padding: 18px 12px;
+  margin-left: 3px;
+  color: white;
+  background-color: rgb(57 65 102 / 88%);
+  transition: 0.7s background-color ease;
+  transition: 0.7s all ease;
+}
+
+.h3Btn {
+  transform: translate(128px, -3px);
+  box-shadow: -126px 5px 8px 2px rgb(217 217 207 / 60%);
+}
+
+h3:hover {
+  background-color: rgb(116, 217, 207);
+}
+
+h3 + h3 {
+  border-top: 3px solid silver;
+}
+
+.container-output {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  justify-content: end;
+  width: 56%;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+}
+.first-form {
+  display: flex;
+  position: fixed;
+  right: 51px;
+  width: 56%;
+}
+
+.first-form > input {
+  border-width: thin;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  margin-left: auto;
+}
+
+input:focus {
+  border: 1px solid blue;
+}
+
+.first-form > button {
+  width: 8%;
+  outline: none !important;
+}
+form > button {
+  background-color: #f00;
+  color: #fff;
+}
+/*================================================================*/
+
+.ulDiv {
+  width: 100%;
+}
+ul {
+  height: 88vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+.todo-doing,
+.todo-done {
+  display: none;
+}
+li {
+  display: flex;
+  flex-direction: column;
+  transition: all 1s ease;
+  background: linear-gradient(
+    to bottom right,
+    rgb(7 103 175),
+    rgb(25 123 221),
+    rgb(83 164 240),
+    rgb(26 136 244),
+    rgb(8 75 133)
+  );
+
+  padding: 5px 10px;
+}
+li + li {
+  margin-top: 8px;
+}
+li > p {
+  width: 100%;
+  font-size: 18px;
+  padding: 5px 10px !important;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  min-height: 50px;
+  transition: all 1s ease;
+}
+li > section {
+  width: 70%;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+section > p {
+  width: 80%;
+  font-size: 17px;
+  /* padding: 5px !important; */
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  /* min-height: 30px; */
+  transition: all 1s ease;
+}
+
+span {
+  width: 18%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+span > button:first-child {
+  background-color: #0f0;
+}
+span > button:last-child {
+  background-color: #f00;
+}
+span > button:nth-child(2) {
+  background-color: rgb(236, 248, 51);
+}
+span > button > .fas {
+  color: #fff;
+  pointer-events: none;
+  padding: 4px 1px;
+}
+
+/*=====================================================================*/
+.completed {
+  background: linear-gradient(
+    to bottom right,
+    rgb(9 103 192),
+    rgb(130, 189, 247),
+    rgb(175, 211, 245),
+    rgb(126, 186, 245),
+    rgb(7 84 155)
+  );
+  /* text-decoration: line-through; */
+  opacity: 0.7;
+}
+.fall {
+  transform: translateY(10rem) rotateZ(20deg);
+  opacity: 0;
+}

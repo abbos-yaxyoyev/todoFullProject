@@ -1,0 +1,109 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  color: #222;
+}
+
+body {
+  background-color: rgba(51, 190, 245, 0.15);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bree Serif", Railvey sans-serif;
+  margin: 0;
+}
+
+.cf::after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+.container {
+  width: 40%;
+  margin: 0 auto;
+  background-color: white;
+  border: none;
+  padding: 20px 40px 20px;
+  margin-top: 50px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.malumot-kiritish {
+  display: block;
+  width: 80%;
+  padding: 7px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  transition: 0.5s all ease;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid blue;
+}
+
+.submit {
+  width: 30%;
+  background-color: gold;
+  padding: 10px;
+  margin: 20px 0;
+  font-weight: 400;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  transition: 0.5s background-color ease;
+}
+
+.submit:focus {
+  background-color: rgb(136, 255, 0);
+  border-radius: 10px;
+  outline: none;
+}
+
+.auth {
+  display: flex;
+  justify-content: end;
+  margin: 50px 60px;
+}
+
+.auth > a {
+  text-decoration: none;
+  background-color: rgb(34, 23, 192);
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 20px;
+  color: white;
+}
+
+.output-error {
+  color: red;
+  font-size: 12px;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
