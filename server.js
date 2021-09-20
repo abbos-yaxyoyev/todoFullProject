@@ -31,5 +31,5 @@ app.use('/index', express.static(path.resolve(__dirname, 'TodoFront')))
 app.use(errorStatus500);
 app.use(errorStatus404);
 
-const port = process.env.PORT
+const port = 3000
 app.listen(port, () => logger.info('Server is running on port 3000...'))
