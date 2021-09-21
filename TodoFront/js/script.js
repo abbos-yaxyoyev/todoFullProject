@@ -24,8 +24,6 @@ window.addEventListener("DOMContentLoaded", function () {
                                 return res.json()
                 })
                 .then(res => {
-                    console.log('2');
-                    console.log(res);
                     if (res === 401 || res === 500) {
                         window.location.assign('./login.html')
                     }
